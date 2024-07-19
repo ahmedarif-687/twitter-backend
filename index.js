@@ -17,7 +17,7 @@ app.use(express.urlencoded({
     extended:true
 }))
 const corsoption={
-    origin:"http://localhost:3000",
+    origin:"*",
     credentials:true
 }
 app.use(cors(corsoption))
