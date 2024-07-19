@@ -26,11 +26,9 @@ app.use(cookieParser());
 app.use("/api/v1/user",userroute)
 app.use("/api/v1/tweet",tweetroute)
 
-// app.get("/home",(req,res)=>{
-//     res.status(200).json({
-//         message:"success"
-//     })
-// })
+app.get("/hme",(req,res)=>{
+    res.send("hello")
+})
 
 app.listen(process.env.PORT||8080,()=>{
     console.log(`Server running on port ${process.env.PORT}`)
